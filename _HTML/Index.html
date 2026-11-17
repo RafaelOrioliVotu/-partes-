@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRE-SE</title>
+    <link rel="stylesheet" href="../_CSS/Index.css">
+</head>
+
+<body>
+    <header>
+        <h1>CADASTRE-SE</h1>
+    </header>
+    <main>
+        <form method="post" action="../_PHP/Index.php">
+            <p>NOME:</p>
+            <label><input type="text" name="nome" placeholder="INSIRA SEU NOME"></label>
+            <p>IDADE:</p>
+            <label><input type="number" name="idade" min="1" placeholder="INSIRA SUA IDADE"></label>
+            <p>NASCIMENTO:</p>
+            <label><input type="date" name="nasc" placeholder="INSIRA SUA DATA"></label>
+            <p>EMAIL:</p>
+            <label><input type="email" name="email" placeholder="INSIRA SEU EMAIL"></label>
+            <p>CPF:</p>
+            <label><input type="number" name="cpf" placeholder="INSIRA SEU CPF"></label>
+            <p>POSSUI ALGUMA DOENÇA:</p>
+
+            <label>
+                <input class="radio" type="radio" name="doenca" value="sim">SIM
+                <input class="radio" type="radio" name="doenca" value="não">NÃO
+            </label>
+            <p></p>
+            <input class="btt" type="submit" value="CADASTRAR">
+            <input class="btt" type="reset" value="RESETAR">
+        </form>
+    </main>
+
+</body>
+
+</html>
+
